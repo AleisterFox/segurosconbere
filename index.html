@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Eric Agrez" />
+    <meta
+      name="description"
+      content="Asegura tu futuro con un Plan Personal de Retiro diseñado para ti. Ahorra de manera inteligente, maximiza tu inversión y disfruta de una jubilación sin preocupaciones. ¡Empieza hoy!"
+    />
+
+    <meta
+      name="Keywords"
+      content="plan personal de retiro, ahorro para el retiro, inversión para jubilación, retiro sin preocupaciones, plan de pensión, ahorro a largo plazo, futuro financiero, jubilación segura, retiro inteligente, inversión segura, plan de ahorro, beneficios fiscales retiro"
+    />
+
+    <meta name="robots" content="all" />
+    <meta property="og:title" content="Seguros con Bere" />
+    <meta
+      property="og:description"
+      content="Asegura tu futuro con un Plan Personal de Retiro diseñado para ti. Ahorra de manera inteligente, maximiza tu inversión y disfruta de una jubilación sin preocupaciones. ¡Empieza hoy!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="segurosconbere.com" />
+    <meta property="og:image" content="imgs/favicon-32x32" />
+    <meta property="og:image:width" content="32" />
+    <meta property="og:image:height" content="32" />
+    <meta property="og:site_name" content="Seguros con Bere" />
+    <meta name="msapplication-TileColor" content="rgb(0, 122, 123)" />
+    <meta name="theme-color" content="rgb(0, 122, 123)" />
+    <link rel="canonical" href="https://segurosconbere.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="imgs/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imgs/favicon-32x32.png"
+    />
+    <link rel="shortcut icon" href="imgs/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="animate.css">
+    <script src="router.js" defer></script>
+    <title>Seguros con Bere</title>
+
+    <script src="wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+
+  <body>
+    <!-- <div class="loading-screen">
+      <div class="loading-spinner"></div>
+    </div> -->
+
+    <header class="header">
+      <div class="logos">
+        <a href="index.html"
+          ><img src="imgs/logo-morales-pesina.png" alt="grupo morales pesina"
+        /></a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav>
+        <a href="/" onclick="route()">Inicio</a>
+        <a href="/calculadora.html" onclick="route()">Calculadora</a>
+        <a href="" class="round-button">Contáctanos</a>
+      </nav>
+      <nav class="menu-mobile">
+        <a href="/" onclick="route()">Inicio</a>
+        <a href="/calculadora.html" onclick="route()">Calculadora</a>
+        <a href="" class="round-button">Contáctanos</a>
+      </nav>
+    </header>
+
+    <div id="app">
+      <div class="space"></div>
+      <section id="hero" class="show wow">
+        <figure class="bg">
+          <img src="imgs/pareja-jubilada.jpg" alt="" />
+        </figure>
+        <div class="content">
+          <h1>Dale vida a tus sueños de retiro</h1>
+          <p>
+            Descubre cuánto necesitas para asegurar tu tranquilidad financiera
+            en tu retiro
+          </p>
+          <a href="calculadora.html" class="round-button">Comenzar ahora</a>
+        </div>
+      </section>
+      <div class="banner fadeInUp wow">
+        <p>
+          Tu <strong>futuro financiero</strong> comienza hoy. Este es el primer
+          paso hacia un retiro con <strong>estabilidad y bienestar</strong>.
+        </p>
+      </div>
+      <section id="calculadora">
+        <div class="content">
+          <figure class="show wow">
+            <img src="imgs/bere-pesina.jpeg" alt="Mujer sonriendo" />
+          </figure>
+          <div class="text-content fadeInRight wow">
+            <h3>
+              Estás a un clic de tomar
+              <strong>la mejor decisión para tu futuro</strong>. Tu "yo" de
+              mañana te lo agradecerá.
+            </h3>
+            <p>
+              Con esta calculadora, obtendrás una proyección detallada de tu
+              ahorro y sus rendimientos, basada en tu edad y el monto que
+              destines mensualmente. Comienza hoy y visualiza el crecimiento de
+              tu inversión hasta los 65 años.
+            </p>
+            <a href="calculadora.html" class="round-button">Comenzar ahora</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="fondo">
+        <h2>Fondo de ahorro</h2>
+        <div class="content">
+          <div class="card fadeIn wow">
+            <div class="inner-card">
+              <figure class="icono">
+                <img
+                  src="imgs/crecimiento.png"
+                  alt="icono de crecimiento de ahorro"
+                />
+              </figure>
+              <h3>Tu dinero crece con una tasa compuesta.</h3>
+              <p>
+                Los intereses se calculan, no solo por lo que aportaste, sino
+                también por los intereses previamente calculados.
+              </p>
+            </div>
+          </div>
+          <div class="card fadeIn wow">
+            <div class="inner-card">
+              <figure class="icono">
+                <img src="imgs/grafica.png" alt="icono de grafica de barras" />
+              </figure>
+              <h3>Deducible de impuestos.</h3>
+              <p>
+                Reduce tu carga fiscal restando ciertos gastos de tus ingresos
+                al calcular tus impuestos. Paga solo lo justo y optimiza tus
+                finanzas.
+              </p>
+            </div>
+          </div>
+          <div class="card bounceInUp wow">
+            <div class="inner-card">
+              <figure class="icono">
+                <img
+                  src="imgs/rendimiento.png"
+                  alt="icono grafica de rendimiento"
+                />
+              </figure>
+              <h3>S&P 500 y NASDAQ</h3>
+              <p>
+                Cuentas con 15 portafolios de inversión. Incluido el S&P 500, la
+                gráfica del lado derecho muestra su histórico en los últimos 5
+                años.
+              </p>
+            </div>
+            <div class="charts">
+              <figure>
+                <img src="imgs/sp500.png" alt="S&P 500 grafica" />
+              </figure>
+              <figure>
+                <img src="imgs/nasdaq.png" alt="NASDAQ grafica" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="funcionamiento">
+        <div class="content">
+          <div class="left fadeInUp wow">
+            <h2>¿Cómo funciona?</h2>
+            <ul>
+              <li>
+                Define el plazo de 5 a 25 años según tu edad y objetivo: Casa,
+                negocio, retiro.
+              </li>
+              <li>Realiza tus depósitos mensuales, semestrales, etc</li>
+              <li>
+                Puedes hacer aportaciones adicionales a las mínimas contratadas
+                para aumentar el rendimiento.
+              </li>
+            </ul>
+          </div>
+          <div class="right fadeIn wow">
+            <figure><img src="imgs/chart.png" alt="" /></figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="personas">
+        <div class="content">
+          <div class="left show wow">
+            <figure>
+              <img src="imgs/woman.jpg" alt="mujer elegante sonriendo" />
+            </figure>
+          </div>
+          <div class="right fadeInRight wow">
+            <h2>Hay 3 tipos de personas</h2>
+            <ul>
+              <li>Los que gastan lo que no tienen pagando intereses.</li>
+              <li>Los que ahorran en el Banco (perdiendo con la inflación).</li>
+              <li>Los que ahorran recibiendo los intereses de los primeros.</li>
+            </ul>
+            <p><strong>¿Y tú de cuál eres?</strong></p>
+            <a href="calculadora.html" class="round-button">Comenzar ahora</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>Copyright &copy; 2025 Seguros con Bere</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const header = document.querySelector(".header");
+        header.classList.toggle("menu-active");
+      }
+    </script>
+  </body>
+</html>
